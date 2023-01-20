@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 | Authentification</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/alert.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li id="specific-li"><a href="index.html">Connect 4</a></li>
+            <li><a href="login.html" style="pointer-events: none; color: gainsboro;">Se connecter</a></li>
+            <li><a href="index.html">Accueil</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <h1>Connecter-vous</h1>
+        <form>
+          <label for="username">Email :</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Connexion</button>
+        </form>
+        <br>
+        <h3>Vous n'avez pas encore de compte ? <a href="">Créer un compte</a></h3>
+    </div>
+      
+    
+    <div id="alert-box-error" class="alert-box-error hidden">
+      <p id="alert-box-error-msg"></p>
+    </div>
+    <div id="alert-box-success" class="alert-box-success hidden">
+      <p id="alert-box-success-msg"></p>
+    </div>
+
+    
+    <script src="assets/js/alert.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

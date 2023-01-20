@@ -1,3 +1,7 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
 .navbar {
     background-color: indigo;
     overflow: hidden;
