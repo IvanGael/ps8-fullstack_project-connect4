@@ -1,9 +1,9 @@
 .navbar {
-    background-color: white;
+    background-color: indigo;
     overflow: hidden;
     border: 2px solid;
     margin: 0 0 0 0;
-    border-color: black;
+    border-color: indigo;
     color: white;
 }
   
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: indigo;
 }
 
 .navbar li {
@@ -21,15 +21,26 @@
   
 .navbar li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
 .navbar li a:hover {
-    background-color: lightskyblue;
+    background-color: indigo;
+    color: white;
 }
 
+
+#specific-li{
+    position: absolute;
+    left: 8%;
+    text-align: left;
+    transform: translate(-50%, 0);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
   

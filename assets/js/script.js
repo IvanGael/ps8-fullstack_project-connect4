@@ -1,5 +1,5 @@
 var form = document.getElementById("gameForm");
-
+console.log("ici")
 form.addEventListener("submit", function(event) {
   event.preventDefault(); // empêche la soumission automatique du formulaire
 
@@ -9,13 +9,23 @@ form.addEventListener("submit", function(event) {
   var taille = document.getElementById("taille").value;
   var debutant = document.getElementById("debutant").value;
 
-  var partie = {
-    joueur1 : joueur1,
-    joueur2 : joueur2,
-    temps : temps,
-    taille : taille,
-    debutant : debutant
+  if(joueur1!="" && joueur2!="" && temps!="" && taille!="" && debutant!=""){
+    var partie = {
+      joueur1 : joueur1,
+      joueur2 : joueur2,
+      temps : temps,
+      taille : taille,
+      debutant : debutant
+    }
+    var msg = "Les données saisies : " + JSON.stringify(partie);
+    document.getElementById("alert-box-success-msg").innerHTML = msg
+    showAlert("success")
+  } else{
+    var msg = "Veuillez renseigner les informations demandées!";
+    document.getElementById("alert-box-error-msg").innerHTML = msg
+    showAlert("error")
   }
-
-  console.log("Partie : " + JSON.stringify(partie));
 });
+
+
+

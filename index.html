@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/tabs.css">
     <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/alert.css">
 </head>
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li id="specific-li"><a href="index.html">Connect 4</a></li>
             <li><a href="index.html">Se connecter</a></li>
+            <li><a href="index.html">Accueil</a></li>
         </ul>
     </div>
 
@@ -21,8 +23,8 @@
     <br>
 
     <div id="tabs-container">
-        <button class="tab-button" id="tab-1">Partie locale</button>
-        <button class="tab-button" id="tab-2">Partie contre une IA</button>
+        <button class="tab-button" id="tab-1">Partie locale | </button>
+        <button class="tab-button" id="tab-2">Partie contre une IA | </button>
         <button class="tab-button" id="tab-3">Partie en ligne</button>
     </div>
 
@@ -64,15 +66,23 @@
                 </select>
             </div>
             <button type="submit" class="btn btn-primary">Lancer la partie</button>
-        </form>          
+        </form>        
+        
+        <div id="alert-box-error" class="alert-box-error hidden">
+          <p id="alert-box-error-msg"></p>
+        </div>
+        <div id="alert-box-success" class="alert-box-success hidden">
+          <p id="alert-box-success-msg"></p>
+        </div>
     </div>
 
     <div id="tab-2-content">Partie contre une IA</div>
-    <div id="tab-3-content">Partie en ligne</div>
+    <div id="tab-3-content">Partie en ligne</div>:
       
       
 
     <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/alert.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+.alert-box-error {
+    background-color: white;
+    color: #721c24;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.alert-box-success {
+    background-color: seagreen;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+  
+  
+.hidden {
+    display: none;
+}
+  
