@@ -1,9 +1,9 @@
 .alert-box-error {
-    background-color: white;
-    color: #721c24;
+    background-color: #721c24;
+    color: white;
     font-weight: bold;
-    padding: 8px;
-    border: 1px solid #f5c6cb;
+    padding: 5px;
+    border: 1px solid #721c24;
     border-radius: 5px;
     position: absolute;
     top: 20px;
@@ -15,8 +15,8 @@
     background-color: seagreen;
     color: white;
     font-weight: bold;
-    padding: 8px;
-    border: 1px solid #f5c6cb;
+    padding: 5px;
+    border: 1px solid seagreen;
     border-radius: 5px;
     position: absolute;
     top: 20px;
