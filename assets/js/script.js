@@ -1,5 +1,4 @@
 var form = document.getElementById("gameForm");
-console.log("ici")
 form.addEventListener("submit", function(event) {
   event.preventDefault(); // empêche la soumission automatique du formulaire
 
