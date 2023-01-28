@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4 | Jeu</title>
+    
+    <!-- * All Css files are linked here -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/tabs.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/alert.css">
+    <link rel="stylesheet" href="assets/css/gameBoard.css">
+    <link rel="stylesheet" href="assets/css/board.css">
+
+
+<body>
+    <!-- * Class Navbar -->
+    <div class="navbar">
+        <ul>
+
+            <!-- back again to the home page -->
+            <li id="specific-li"><a href="index.html">Connect 4</a></li>
+            
+            <!-- Se connecter-->
+            <li><a href="login.html">Se connecter</a></li>
+
+            <!-- back agaoin to the home page -->
+            <li><a href="index.html">Accueil</a></li>
+
+        </ul>
+    </div>
+
+    <div class="mainpage">
+        <div id="player1" class="player">
+            <img src="assets/images/joueur1.png" alt="Image 1">
+            <div class="description"> Joueur 1 </div>
+        </div>
+        <div id="timer">
+            <div class="wrapper">
+                <div class="stopwatch-frame">
+                    <div class="pie" id="pie"></div>
+                </div>
+                <div class="stopwatch-button"></div>
+            </div>
+        </div>
+        <div id="player2" class="player">
+            <img src="assets/images/joueur2.png" alt="Image 2">
+            <div class="description"> Joueur 2 </div>
+        </div>
+        <div id="chat"></div>
+        <!-- grid -->
+        <div class="wrapper" id="board">
+            <div id="grid-container"></div>
+        </div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="popup">
+        <div class="victory">
+            <p id="winner">I won</p>
+            <button type="submit" onclick="reset()" id="redo">Rejouer</button>
+            <button type="submit" onclick="location.href = 'index.html'" id="home">Accueil</button>
+        </div>
+        <img src="https://i.giphy.com/media/1pnye1n5EWWHTu93Ly/giphy.webp">
+    </div>
+
+    
+    <!-- grid -->
+    <script src="assets/js/grid.js"></script>
+
+</body>
+
+</html>

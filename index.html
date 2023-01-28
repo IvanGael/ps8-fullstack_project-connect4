@@ -1,3 +1,11 @@
+
+<!-- * 
+ *  This is the page of the index
+ *      -  where we start to play
+ *      - lance la partie -> my part
+ *    
+* -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,40 +13,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect 4 | Accueil</title>
+    
+    <!-- * All Css files are linked here -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/tabs.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <link rel="stylesheet" href="assets/css/alert.css">
+
+
 </head>
 <body>
+
+
+    <!-- * Class Navbar -->
     <div class="navbar">
         <ul>
+
+            <!-- back again to the home page -->
             <li id="specific-li"><a href="index.html">Connect 4</a></li>
+            
+            <!-- Se connecter-->
             <li><a href="login.html">Se connecter</a></li>
+
+            <!-- back agaoin to the home page -->
             <li><a href="index.html">Accueil</a></li>
+
         </ul>
     </div>
 
     <br>
     <br>
 
+    <!-- * Options in the home page-->
     <div id="tabs-container">
-        <button class="tab-button" id="tab-1">Partie locale | </button>
-        <button class="tab-button" id="tab-2">Partie contre une IA | </button>
+        <button class="tab-button" id="tab-1">Partie locale   </button>
+        <button class="tab-button" id="tab-2">Partie contre une IA    </button>
         <button class="tab-button" id="tab-3">Partie en ligne</button>
     </div>
 
+
+    <!-- * Partie locale -->
     <div id="tab-1-content">
         <br>
+
+        <!-- Data -->
         <form id="gameForm">
+
+            <!-- Joueur 1-->
             <div class="form-group">
               <label for="joueur1">Joueur 1</label>
               <input type="text" id="joueur1" class="form-control">
             </div>
+
+            <!-- Joueur  2-->
             <div class="form-group">
               <label for="joueur2">Joueur 2</label>
               <input type="text" id="joueur2" class="form-control">
             </div>
+
+            <!-- Temps -->
             <div class="form-group">
                 <label for="temps">Temps </label>
                 <select id="temps" class="form-control">
@@ -47,6 +80,8 @@
                   <option value="30s">30s</option>
                 </select>
             </div>
+
+            <!-- Taille de la grille -->
             <div class="form-group">
                 <label for="taille">Taille de la grille </label>
                 <select id="taille" class="form-control">
@@ -56,21 +91,36 @@
                   <option value="8 x 11">8 x 11 cases </option>
                 </select>
             </div>
+
+            <!-- Debutant -->
             <div class="form-group">
                 <label for="debutant">Débutant </label>
                 <select id="debutant" class="form-control">
                   <option value="" disabled selected>Choisir...</option>
-                  <option value="joueur1 commence">Joueur1 commence</option>
-                  <option value="joueur2 commence">Joueur2 commence</option>
+                  <option value="joueur1">Joueur1 commence</option>
+                  <option value="joueur2">Joueur2 commence</option>
                   <option value="aleatoire">Aléatoire</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Lancer la partie</button>
-        </form>        
+
+            <!-- Lancer la partie -->
+
+            <!-- 
+              <li id="specific-li"><a href="index.html">Connect 4</a></li> 
+            -->
+            
+              <button type="submit" class="btn btn-primary">Lancer la partie</button>
+           
+            
+        
+          </form>        
     </div>
 
-    <div id="tab-2-content">Partie contre une IA</div>
-    <div id="tab-3-content">Partie en ligne</div>:
+    <!-- * Partie contre une IA -->
+    <div id="tab-2-content"> <br> Partie contre une IA</div>
+
+    <!-- * Partie en ligne -->
+    <div id="tab-3-content"> <br> Partie en ligne</div>:
       
     
     <div id="alert-box-error" class="alert-box-error hidden">
@@ -80,8 +130,10 @@
       <p id="alert-box-success-msg"></p>
     </div>
 
+    <!-- * Scripts -->
     <script src="assets/js/tabs.js"></script>
     <script src="assets/js/alert.js"></script>
     <script src="assets/js/script.js"></script>
+
 </body>
 </html>

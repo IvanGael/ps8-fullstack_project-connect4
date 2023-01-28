@@ -1,4 +1,7 @@
+
+
 var form = document.getElementById("gameForm");
+
 form.addEventListener("submit", function(event) {
   event.preventDefault(); // empêche la soumission automatique du formulaire
 
@@ -8,22 +11,47 @@ form.addEventListener("submit", function(event) {
   var taille = document.getElementById("taille").value;
   var debutant = document.getElementById("debutant").value;
 
-  if(joueur1!="" && joueur2!="" && temps!="" && taille!="" && debutant!=""){
-    var partie = {
+  if(joueur1!=="" && joueur2!=="" && temps!=="" && taille!=="" && debutant!==""){
+    
+    var data = {
       joueur1 : joueur1,
       joueur2 : joueur2,
       temps : temps,
       taille : taille,
       debutant : debutant
-    }
-    var msg = "Les données saisies : " + JSON.stringify(partie);
-    document.getElementById("alert-box-success-msg").innerHTML = msg
-    showAlert("success")
+    };
+
+    
+
+    //const fs = require('fs');
+
+    //const jsonString = JSON.stringify(data);
+
+    //fs.writeFileSync('./example.js', jsonString);
+
+    //* messages
+    //var msg = "Les données saisies : " + JSON.stringify(data);
+    //document.getElementById("alert-box-success-msg").innerHTML = msg
+    //alert(JSON.stringify(data));
+    //showAlert("success");
+
+    // * Write the data into a file to be used in another page , JSON
+    //var fs = require('fs');
+    //fs.writeFileSync('../data/example.json', data);
+    document.location.href = "game.html?" +
+        "joueur1=" + encodeURI(joueur1) + "&" +
+        "joueur2=" + encodeURI(joueur2) + "&" +
+        "temps=" + encodeURI(temps) + "&" +
+        "taille=" + encodeURI(taille) + "&" +
+        "debutant=" + encodeURI(debutant);
+
   } else{
-    var msg = "Veuillez renseigner les informations demandées!";
-    document.getElementById("alert-box-error-msg").innerHTML = msg
+    document.getElementById("alert-box-error-msg").innerHTML = "Veuillez renseigner les informations demandées!"
     showAlert("error")
   }
+
+
+
 });
 
 

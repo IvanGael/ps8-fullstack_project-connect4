@@ -1,0 +1,55 @@
+#grid-container {
+  background-color: midnightblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* aligns the grid horizontally */
+  align-items: center;
+}
+
+.grid-column {
+  flex: 1;
+  height: 100%;
+}
+
+.grid-column:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+  
+.grid-cell-space {
+  flex: 1;
+  position: relative;
+}
+
+.grid-cell {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.grid-cell.horizontal {
+  height: 90%;
+}
+
+.grid-cell.vertical {
+  width: 90%;
+}
+
+.one_clicked{
+  background-color: yellow;
+}
+
+.two_clicked{
+  background-color: red;
+}
+
+  .active {
+    background-color: red;
+  }
