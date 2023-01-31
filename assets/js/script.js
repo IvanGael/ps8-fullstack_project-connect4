@@ -47,6 +47,12 @@ form.addEventListener("submit", function(event) {
 
   } else{
     document.getElementById("alert-box-error-msg").innerHTML = "Veuillez renseigner les informations demandées!"
+    var audio = new Audio("./assets/mp3/alert-error-sound-1.mp3");
+    audio.play().then(()=>{
+      console.log("Audio is successfully loaded.")
+    }).catch((e)=>{
+      console.log(e)
+    });
     showAlert("error")
   }
 
